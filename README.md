@@ -1,7 +1,7 @@
 # bzip2_decomp
 An Elixir NIF for [bzip2-rs](https://github.com/paolobarbolini/bzip2-rs).
-- Works standalone with no dependency on `libbzip2`.
-- Precompiled binaries available via [rustler_precompiled](https://github.com/philss/rustler_precompiled) (todo).
+- Works standalone with no dependency on libbzip2.
+- Precompiled binaries available via [rustler_precompiled](https://github.com/philss/rustler_precompiled).
 - MIT licensed.
 
 ## Installation
@@ -26,7 +26,3 @@ Bzip2.decompress(encoded_data)
 
 ## Acknowledgments
 Special thanks to [crypdough.eth](https://github.com/crypdoughdoteth) for providing the Rust expertise to make this package possible.
-
-## Todo:
-- Add precompiled NIF binaries
-- Publish to hex.pm
