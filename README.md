@@ -1,7 +1,7 @@
 # bzip2_decomp
 An Elixir NIF for [bzip2-rs](https://github.com/paolobarbolini/bzip2-rs).
 - Works standalone with no dependency on `libbzip2`.
-- Precompiled binaries available via [rustler_precompiled](https://github.com/philss/rustler_precompiled).
+- Precompiled binaries available via [rustler_precompiled](https://github.com/philss/rustler_precompiled) (todo).
 - MIT licensed.
 
 ## Installation
