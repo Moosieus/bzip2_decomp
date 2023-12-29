@@ -1,5 +1,5 @@
 use bzip2_rs::DecoderReader;
-use rustler::{Binary, NifResult, OwnedBinary, Error};
+use rustler::{Binary, Error, NifResult, OwnedBinary};
 use std::io::Read;
 
 #[rustler::nif(schedule = "DirtyCpu")]

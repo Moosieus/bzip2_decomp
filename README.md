@@ -1,15 +1,15 @@
 # bzip2_decomp
 An Elixir NIF for [bzip2-rs](https://github.com/paolobarbolini/bzip2-rs).
-
-## Features
-- Works standalone with no dependency on libbzip2
-- Precompiled binaries available via [rustler_precompiled](https://github.com/philss/rustler_precompiled)
-- MIT licensed
+- Works standalone with no dependency on `libbzip2`.
+- Precompiled binaries available via [rustler_precompiled](https://github.com/philss/rustler_precompiled).
+- MIT licensed.
 
 ## Installation
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `bzip2_decomp` to your list of dependencies in `mix.exs`:
+*Note: This package isn't yet available on hex - coming soon :)*
 
+Add `:bzip2_decomp` to your list of dependencies in `mix.exs`:
+
+<!-- BEGIN: VERSION -->
 ```elixir
 def deps do
   [
@@ -17,10 +17,21 @@ def deps do
   ]
 end
 ```
+<!-- END: VERSION -->
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/bzip2_decomp>.
+Documentation is available on [HexDocs](https://hexdocs.pm/bzip2_decomp/readme.html) and may also be generated with [ExDoc](https://github.com/elixir-lang/ex_doc).
 
-## Scratch notes:
-Target this commit: https://github.com/paolobarbolini/bzip2-rs/tree/82e3cbb4ea6cb4249a43f90b06ae1a5e94f06a9f
+## Usage
+```elixir
+Bzip2.decompress(encoded_data)
+```
+
+## Notes:
+Since the `bzip2-rs` crate hasn't been kept up to date, this repo's targeting [the git repo directly](native/bzip2_decomp/Cargo.toml).
+
+## Acknowledgments
+Special thanks to [crypdough.eth](https://github.com/crypdoughdoteth) for providing the Rust expertise to make this package possible.
+
+## Todo:
+- Add precompiled NIF binaries
+- Publish to hex.pm
