@@ -5,8 +5,6 @@ An Elixir NIF for [bzip2-rs](https://github.com/paolobarbolini/bzip2-rs).
 - MIT licensed.
 
 ## Installation
-*Note: This package isn't yet available on hex - coming soon :)*
-
 Add `:bzip2_decomp` to your list of dependencies in `mix.exs`:
 
 <!-- BEGIN: VERSION -->
