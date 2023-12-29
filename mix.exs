@@ -49,7 +49,7 @@ defmodule Bzip2.MixProject do
     [
       files: [
         "lib",
-        "native/bzip2_decomp/.cargo/config",
+        "native/bzip2_decomp/.cargo/config.toml",
         "native/bzip2_decomp/src",
         "native/bzip2_decomp/Cargo.toml",
         "native/bzip2_decomp/Cargo.lock",
