@@ -1,0 +1,6 @@
+# https://hexdocs.pm/rustler_precompiled/precompilation_guide.html#additional-configuration-before-build
+# Ostensibly we don't need this, but actions is yelling at me so I'm adding it.
+[build.env]
+passthrough = [
+  "RUSTLER_NIF_VERSION"
+]
