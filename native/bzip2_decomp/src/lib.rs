@@ -4,7 +4,6 @@ use std::io::Read;
 
 #[rustler::nif(schedule = "DirtyCpu")]
 fn decompress<'a>(encoded: Binary<'a>) -> NifResult<OwnedBinary> {
-    // roughly based on bzip2's compression ratio
     let mut buf: Vec<u8> = Vec::new();
     let mut reader = DecoderReader::new(encoded.as_slice());
 
