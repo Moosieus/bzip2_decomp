@@ -1,6 +1,11 @@
 defmodule Bzip2 do
-  use Rustler,
-    otp_app: :bzip2_decomp
+  version = Mix.Project.config()[:version]
+
+  use RustlerPrecompiled,
+    otp_app: :bzip2_decomp,
+    base_url: "https://github.com/Moosieus/bzip2_decomp/releases/download#{version}",
+    force_build: System.get_env("RUSTLER_BUILD") in ["1", "true"],
+    version: version
 
   @spec decompress(binary()) :: binary() | {:error, String.t()}
   def decompress(_), do: :erlang.nif_error(:nif_not_loaded)

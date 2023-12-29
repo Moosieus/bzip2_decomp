@@ -28,7 +28,7 @@ defmodule Bzip2.MixProject do
   defp deps do
     [
       {:ex_doc, "~> 0.30.5", only: :dev, runtime: false},
-      {:rustler, "~> 0.30.0", optional: true, runtime: false},
+      {:rustler, ">= 0.0.0", optional: true, runtime: false},
       {:rustler_precompiled, "~> 0.7", runtime: false}
     ]
   end
