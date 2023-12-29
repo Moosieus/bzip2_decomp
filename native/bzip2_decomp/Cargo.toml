@@ -1,0 +1,14 @@
+[package]
+name = "bzip2_decomp"
+version = "0.1.0"
+authors = []
+edition = "2021"
+
+[lib]
+name = "bzip2_decomp"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+rustler = "0.30.0"
+bzip2-rs = { git = "https://github.com/paolobarbolini/bzip2-rs.git", rev = "82e3cbb4ea6cb4249a43f90b06ae1a5e94f06a9f"}
