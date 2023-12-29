@@ -26,8 +26,6 @@ Documentation is available on [HexDocs](https://hexdocs.pm/bzip2_decomp/readme.h
 Bzip2.decompress(encoded_data)
 ```
 
-## [Development](./Development.md)
-
 ## Acknowledgments
 Special thanks to [crypdough.eth](https://github.com/crypdoughdoteth) for providing the Rust expertise to make this package possible.
 
