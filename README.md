@@ -26,8 +26,7 @@ Documentation is available on [HexDocs](https://hexdocs.pm/bzip2_decomp/readme.h
 Bzip2.decompress(encoded_data)
 ```
 
-## Notes:
-Since the `bzip2-rs` crate hasn't been kept up to date, this repo's targeting [the git repo directly](native/bzip2_decomp/Cargo.toml).
+## [Development](./Development.md)
 
 ## Acknowledgments
 Special thanks to [crypdough.eth](https://github.com/crypdoughdoteth) for providing the Rust expertise to make this package possible.
