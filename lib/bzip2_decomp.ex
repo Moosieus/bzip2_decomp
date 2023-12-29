@@ -3,7 +3,7 @@ defmodule Bzip2 do
 
   use RustlerPrecompiled,
     otp_app: :bzip2_decomp,
-    base_url: "https://github.com/Moosieus/bzip2_decomp/releases/download#{version}",
+    base_url: "https://github.com/Moosieus/bzip2_decomp/releases/download/v#{version}",
     force_build: System.get_env("RUSTLER_BUILD") in ["1", "true"],
     version: version
 
